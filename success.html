@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="./results/style.css" />
+		<title>You've successfully registered!</title>
+	</head>
+
+	<body class="thank_page_main">
+		<div class="thank_page_body">
+			<div class="thank_page_wrap">
+				<div class="thank_page_image"></div>
+				<p class="title_message"></p>
+				<p class="sub_title_message">You've successfully registered!</p>
+				<p class="message">
+					Be sure to answer the call from our manager, <br />
+					<br />
+					to reserve a place in the program!
+				</p>
+			</div>
+		</div>
+
+		<script>
+			const LANG = 'TR'
+
+			const successRegister = {
+				RU: [
+					{
+						title: `Вы успешно зарегистрировались!`,
+						message: `Обязательно ответьте на звонок от нашего менеджера, <br /> чтобы забронировать за собой место в программе!`,
+					},
+				],
+				EN: [
+					{
+						title: `You've successfully registered!`,
+						message: `Be sure to answer the call from our manager, <br /> to reserve a place in the program!`,
+					},
+				],
+				PL: [
+					{
+						title: `Rejestracja przebiegła pomyślnie!`,
+						message: `Pamiętaj, aby odebrać telefon od naszego menedżera, <br />, aby zarezerwować miejsce w programie!`,
+					},
+				],
+				ES: [
+					{
+						title: `Te has registrado correctamente!`,
+						message: `Asegúrese de responder a la llamada de nuestro gerente, <br /> Para reservar una plaza en el programa!`,
+					},
+				],
+				CZ: [
+					{
+						title: `Úspěšně jste se zaregistrovali!`,
+						message: `Nezapomeňte přijmout hovor od našeho manažera, <br /> rezervovat si místo v programu!`,
+					},
+				],
+				TR: [
+					{
+						title: `Başarıyla kaydoldunuz!`,
+						message: `Yöneticimizden gelen aramayı cevapladığınızdan emin olun, <br /> Programda yer ayırtmak için!`,
+					},
+				],
+			}
+
+			document.title = successRegister[LANG][0].title
+			document.querySelector('.sub_title_message').innerHTML = successRegister[LANG][0].title
+			document.querySelector('.message').innerHTML = successRegister[LANG][0].message
+		</script>
+	</body>
+</html>

